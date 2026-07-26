@@ -31,40 +31,12 @@
             --radius: 16px;
             --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
-		/* ---------- TOP BAR ---------- */
-		.top-bar {
-			background: var(--charcoal);
-			color: #ccc;
-            font-size: 0.8rem;
-            padding: 8px 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-		}
-		.top-bar .container {
-			display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 8px 20px;
-		}
-		.top-bar a{
-			color: #fff;
-            text-decoration: none;
-            transition: var(--transition);
-		}
-		.top-bar a:hover{
-			color: var(--gold-light);
-		}
-		.top-bar i {
-			margin-right: 6px;
-            color: var(--gold-light);
-		}
-				
+
         html {
             scroll-behavior: smooth;
         }
-		
-		
-		body {
+
+        body {
             font-family: 'Inter', sans-serif;
             background: var(--cream);
             color: var(--charcoal);
@@ -72,10 +44,7 @@
             overflow-x: hidden;
         }
 
-        h1,
-        h2,
-        h3,
-        h4 {
+        h1, h2, h3, h4 {
             font-family: 'Playfair Display', serif;
             font-weight: 600;
         }
@@ -160,9 +129,9 @@
             align-items: center;
         }
         .logo img {
-		height: auto;
-		width: 250px;
-		display: block;
+            height: auto;
+            width: 250px;
+            display: block;
         }
 
         .nav-links {
@@ -325,8 +294,7 @@
         }
 
         @keyframes float {
-            0%,
-            100% {
+            0%, 100% {
                 transform: translateY(0px);
             }
             50% {
@@ -365,7 +333,7 @@
             color: #777;
         }
 
-        /* ---------- PRODUCTS (UPDATED FOR 10 ITEMS) ---------- */
+        /* ---------- PRODUCTS ---------- */
         .products {
             padding: 80px 0;
         }
@@ -403,7 +371,6 @@
             box-shadow: 0 16px 48px rgba(0, 0, 0, 0.08);
         }
 
-        /* Image wrapper inside product card */
         .product-card .image {
             height: 220px;
             background: var(--warm-grey);
@@ -775,13 +742,12 @@
 
 <body>
 
-
     <!-- ========== NAVBAR ========== -->
     <header class="navbar" id="navbar">
         <div class="container">
             <a href="#" class="logo">
-			    <img src="images/Beautiful_Stiches_Logo.png" alt="Logo" />
-					</a>
+                <img src="images/Beautiful_Stiches_logo.png" alt="Emy & Edy Logo" />
+            </a>
 
             <ul class="nav-links" id="navLinks">
                 <li><a href="#products">Collection</a></li>
@@ -824,12 +790,10 @@
 
             <div class="hero-image">
                 <div class="mockup">
-                    <!-- Hero placeholder image -->
-                    <img src="images/site_image.png" alt="Site Image" />
+                    <img src="images/site_image.png" alt="Premium Bedding Set" />
                 </div>
-                <!-- floating badges -->
                 <div class="float-badge badge-1">
-                    <i class="fas fa-leaf"></i> satisfaction Guaranteed
+                    <i class="fas fa-leaf"></i> Satisfaction Guaranteed
                 </div>
                 <div class="float-badge badge-2">
                     <i class="fas fa-star" style="color: #f5b342;"></i> 4.9 ★ (2k+)
@@ -864,159 +828,144 @@
         </div>
     </section>
 
-    <!-- ========== PRODUCTS – 10 BEDDINGS ========== -->
+    <!-- ========== PRODUCTS ========== -->
     <section class="products" id="products">
         <div class="container">
             <div class="section-header">
-                <h2>Our collection</h2>
+                <h2>Our Collection</h2>
                 <p>10 luxurious beddings, crafted for your most restful nights.</p>
             </div>
 
             <div class="product-grid">
-                <!-- ============================================================ -->
-                <!-- 🔽  REPLACE the src="..." with your own image URL for each card  -->
-                <!-- ============================================================ -->
-
-                <!-- 1. Organic Cotton Sheet Set -->
+                <!-- 1. Premium Cotton Botanical Design -->
                 <div class="product-card">
                     <div class="image">
-                        <!-- 🔁 REPLACE with your image URL -->
-                        <img src="images/Premium_Cotton_Botanical_Design.png" alt="Botanical Design" />
+                        <img src="images/Premium_Cotton_Botanical_Design.png" alt="Premium Cotton Botanical Design" />
                     </div>
                     <div class="info">
-                        <h4>Premium Cotton Botanical Design</h4>
-                        <div class="category">Queen · 300 thread count</div>
+                        <h4>Premium Botanical Elegance</h4>
+                        <div class="category">Full · 100% Organic Cotton</div>
+                        <div class="rating">★★★★★ <span>(185)</span></div>
+                        <div class="price">₦20,500</div>
+                    </div>
+                </div>
+
+                <!-- 2. Geometric Sheets -->
+                <div class="product-card">
+                    <div class="image">
+                        <img src="images/Geometric_Sheets.png" alt="Geometric Sheets" />
+                    </div>
+                    <div class="info">
+                        <h4>Modern Geometric Collection</h4>
+                        <div class="category">Queen · Contemporary Design</div>
                         <div class="rating">★★★★★ <span>(142)</span></div>
-                        <div class="price">₦17,000</div>
+                        <div class="price">₦18,500</div>
                     </div>
                 </div>
 
-                <!-- 2. Linen Duvet Cover -->
+                <!-- 3. Classic Tartan Plaid Bedding Set -->
                 <div class="product-card">
                     <div class="image">
-                        <!-- 🔁 REPLACE with your image URL -->
-                        <img src="images/Geometric_Sheets.png" alt="Beddings" />
+                        <img src="images/Classic_Tartan_Plaid_Bedding_Set.jfif" alt="Classic Tartan Plaid Bedding Set" />
                     </div>
                     <div class="info">
-                        <h4>Geometric Sheets</h4>
-                        <div class="category">King</div>
-                        <div class="rating">★★★★★ <span>(98)</span></div>
-                        <div class="price">₦17,000</div>
+                        <h4>Classic Plaid Collection</h4>
+                        <div class="category">King · Timeless Checkered</div>
+                        <div class="rating">★★★★☆ <span>(156)</span></div>
+                        <div class="price">₦19,700</div>
                     </div>
                 </div>
 
-                <!-- 3. Eucalyptus Cooling Comforter -->
+                <!-- 4. Luxury Patterned Sheets -->
                 <div class="product-card">
                     <div class="image">
-                        <!-- 🔁 REPLACE with your image URL -->
-                        <img src="images/Classic_Tartan_Plaid_Bedding_Set.jfif" alt="Plaid Beddings" />
-                    </div>
-                    <div class="info">
-                        <h4>Classic Tartan Plaid Bedding Set</h4>
-                        <div class="category">King</div>
-                        <div class="rating">★★★★★ <span>(87)</span></div>
-                        <div class="price">₦17,000</div>
-                    </div>
-                </div>
-
-                <!-- 4. Cotton Percale Fitted Sheet -->
-                <div class="product-card">
-                    <div class="image">
-                        <!-- 🔁 REPLACE with your image URL -->
                         <img src="images/Luxury_Patterned_Sheets.png" alt="Luxury Patterned Sheets" />
                     </div>
                     <div class="info">
-                        <h4>Luxury Patterned Sheets</h4>
-                        <div class="category">Twin · crisp weave</div>
-                        <div class="rating">★★★★☆ <span>(64)</span></div>
-                        <div class="price">₦17,000</div>
+                        <h4>Luxury Patterned Dreams</h4>
+                        <div class="category">Twin · Premium Cotton</div>
+                        <div class="rating">★★★★★ <span>(98)</span></div>
+                        <div class="price">₦17,500</div>
                     </div>
                 </div>
 
-                <!-- 5. Bamboo Pillowcase Set -->
+                <!-- 5. Golden Horizon Bedsheet Set -->
                 <div class="product-card">
                     <div class="image">
-                        <!-- 🔁 REPLACE with your image URL -->
-                        <img src="images/Golden_Horizon_Bedsheet_Set_(4 Pillowcases).png" alt="Golden Horizon Bedsheet Set (4 Pillowcases)" />
+                        <img src="images/Golden_Horizon_Bedsheet_Set_(4 Pillowcases).png" alt="Golden Horizon Bedsheet Set" />
                     </div>
                     <div class="info">
-                        <h4>Golden Horizon Bedsheet Set (4 Pillowcases)</h4>
-                        <div class="category">Standard · silky soft</div>
-                        <div class="rating">★★★★★ <span>(53)</span></div>
-                        <div class="price">₦20,000</div>
+                        <h4>Golden Horizon Collection</h4>
+                        <div class="category">Standard · Silky Soft</div>
+                        <div class="rating">★★★★★ <span>(112)</span></div>
+                        <div class="price">₦19,000</div>
                     </div>
                 </div>
 
-                <!-- 6. Merino Wool Blanket -->
+                <!-- 6. Botanical Bliss Bedsheet Set -->
                 <div class="product-card">
                     <div class="image">
-                        <!-- 🔁 REPLACE with your image URL -->
-                        <img src="images/Botanical_Bliss_Bedsheet_Set_(4 Pillowcases).png" alt="Botanical Bliss Bedsheet Set (4 Pillowcases)" />
+                        <img src="images/Botanical_Bliss_Bedsheet_Set_(4 Pillowcases).png" alt="Botanical Bliss Bedsheet Set" />
                     </div>
                     <div class="info">
-                        <h4>Botanical Bliss Bedsheet Set (4 Pillowcases)</h4>
-                        <div class="category">Throw · 100% merino</div>
-                        <div class="rating">★★★★★ <span>(41)</span></div>
-                        <div class="price">₦18,700</div>
+                        <h4>Botanical Bliss Collection</h4>
+                        <div class="category">King · Natural Fibers</div>
+                        <div class="rating">★★★★★ <span>(87)</span></div>
+                        <div class="price">₦19,500</div>
                     </div>
                 </div>
 
-                <!-- 7. Sateen Stripe Duvet Set -->
+                <!-- 7. Cuddly Clouds Bedsheet Set -->
                 <div class="product-card">
                     <div class="image">
-                        <!-- 🔁 REPLACE with your image URL -->
-                        <img src="images/Cuddly_Clouds_Bedsheet_Set_(4 Pillowcases).png" alt="Cuddly Clouds Bedsheet Set (4 pillowcases)" />
+                        <img src="images/Cuddly_Clouds_Bedsheet_Set_(4 Pillowcases).png" alt="Cuddly Clouds Bedsheet Set" />
                     </div>
                     <div class="info">
-                        <h4>Cuddly Clouds Bedsheet Set (4 Pillowcases)</h4>
-                        <div class="category">King · sateen weave</div>
-                        <div class="rating">★★★★☆ <span>(37)</span></div>
-                        <div class="price">₦19,700</div>
+                        <h4>Cuddly Clouds Collection</h4>
+                        <div class="category">Cal King · Crisp Weave</div>
+                        <div class="rating">★★★★☆ <span>(76)</span></div>
+                        <div class="price">₦18,000</div>
                     </div>
                 </div>
 
-                <!-- 8. Linen Blend Sheet Set -->
+                <!-- 8. Ocean Plaid Bedsheet Set -->
                 <div class="product-card">
                     <div class="image">
-                        <!-- 🔁 REPLACE with your image URL -->
-                        <img src="images/Ocean_Plaid_Bedsheet_Set_(4 Pillowcases).png" alt="Ocean Plaid BedsheetSet (4 Pillowcases)" />
+                        <img src="images/Ocean_Plaid_Bedsheet_Set_(4 Pillowcases).png" alt="Ocean Plaid Bedsheet Set" />
                     </div>
                     <div class="info">
-                        <h4>Ocean Plaid BedsheetSet (4 Pillowcases)</h4>
-                        <div class="category">Cal King · cotton-linen</div>
-                        <div class="rating">★★★★★ <span>(29)</span></div>
-                        <div class="price">₦19,700</div>
+                        <h4>Ocean Plaid Collection</h4>
+                        <div class="category">Queen · Sustainable Fabric</div>
+                        <div class="rating">★★★★★ <span>(105)</span></div>
+                        <div class="price">₦21,500</div>
                     </div>
                 </div>
 
-                <!-- 9. Organic Flannel Sheet Set -->
+                <!-- 9. Safari Serenity Bedsheet Set -->
                 <div class="product-card">
                     <div class="image">
-                        <!-- 🔁 REPLACE with your image URL -->
-                        <img src="images/Safari_Serenity_Bedsheet_Set_(4 Pillowcases).png" alt="Safari Serenity Bedsheet (4 Pillowcases)" />
+                        <img src="images/Safari_Serenity_Bedsheet_Set_(4 Pillowcases).png" alt="Safari Serenity Bedsheet Set" />
                     </div>
                     <div class="info">
-                        <h4>Safari Serenity Bedsheet Set (4 Pillowcases)</h4>
-                        <div class="category">Full · brushed cotton</div>
-                        <div class="rating">★★★★★ <span>(22)</span></div>
-                        <div class="price">₦25,000</div>
+                        <h4>Safari Serenity Collection</h4>
+                        <div class="category">Full · Ultra-Soft</div>
+                        <div class="rating">★★★★★ <span>(118)</span></div>
+                        <div class="price">₦22,000</div>
                     </div>
                 </div>
 
-                <!-- 10. Cotton Muslin Quilt -->
+                <!-- 10. Turquoise Bloom Bedsheet Set -->
                 <div class="product-card">
                     <div class="image">
-                        <!-- 🔁 REPLACE with your image URL -->
-                        <img src="images/Turquoise_Bloom_Bedsheet_Set_(4 Pillowcases).png" alt="Turquoise Bedsheet Set (4 Pillowcases)" />
+                        <img src="images/Turquoise_Bloom_Bedsheet_Set_(4 Pillowcases).png" alt="Turquoise Bloom Bedsheet Set" />
                     </div>
                     <div class="info">
-                        <h4>Turquoise Bloom Bedsheet Set (4 Pillowcases)</h4>
-                        <div class="category">Queen · lightweight</div>
-                        <div class="rating">★★★★☆ <span>(18)</span></div>
-                        <div class="price">₦25,000</div>
+                        <h4>Turquoise Bloom Collection</h4>
+                        <div class="category">King · Premium Comfort</div>
+                        <div class="rating">★★★★★ <span>(95)</span></div>
+                        <div class="price">₦21,000</div>
                     </div>
                 </div>
-                <!-- end of 10 products -->
             </div>
         </div>
     </section>
@@ -1025,7 +974,7 @@
     <section class="testimonials" id="testimonials">
         <div class="container">
             <div class="section-header">
-                <h2>What our sleepers say</h2>
+                <h2>What Our Sleepers Say</h2>
                 <p>Real reviews from real people who finally found their perfect bed.</p>
             </div>
 
@@ -1033,8 +982,8 @@
                 <div class="testimonial-card">
                     <div class="stars">★★★★★</div>
                     <blockquote>
-                        “I've never slept better. The linen is buttery soft and
-                        breathes so well. My partner and I both love it.”
+                        "The Premium Botanical set is absolutely stunning! The leaf designs are elegant,
+                        and the organic cotton feels incredible. My bedroom looks like a luxury resort now!"
                     </blockquote>
                     <div class="author">
                         <div class="avatar" style="background: #4a7c7c;">A</div>
@@ -1048,8 +997,8 @@
                 <div class="testimonial-card">
                     <div class="stars">★★★★★</div>
                     <blockquote>
-                        “Sustainable luxury that actually feels luxurious.
-                        The eucalyptus duvet is a game-changer for hot sleepers.”
+                        "I love my geometric sheet set! The modern design is perfect for my contemporary bedroom,
+                        and the quality is outstanding. Best investment I've made for my bedroom."
                     </blockquote>
                     <div class="author">
                         <div class="avatar" style="background: #b8a28c;">M</div>
@@ -1063,8 +1012,8 @@
                 <div class="testimonial-card">
                     <div class="stars">★★★★★</div>
                     <blockquote>
-                        “Beautiful packaging, fast shipping, and the quality is
-                        unmatched. I'm slowly replacing all my bedding with LuxeRest.”
+                        "The plaid design is classic and timeless. My whole family loves it!
+                        Emy & Edy truly delivers on their promise of luxury beddings that last."
                     </blockquote>
                     <div class="author">
                         <div class="avatar" style="background: #6b9b9b;">E</div>
@@ -1102,14 +1051,14 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-				<!-- 🔁 REPLACE with your image URL -->
                     <a href="#" class="logo">
-					<img src="images/Beautiful_Stiches_Logo.png" alt="Logo" />
-					</a>
+                        <img src="images/Beautiful_Stiches_logo.png" alt="Emy & Edy Logo" />
+                    </a>
                         
                     <p>
-                        Lovely beddings for the conscious sleeper.
-                        Carefuly Selected with love.
+                        Premium beddings for the conscious sleeper.
+                        Carefully selected with love, crafted for luxury comfort 
+                        and a restful sleep.
                     </p>
                     <div class="footer-social">
                         <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
@@ -1122,8 +1071,9 @@
                 <div>
                     <h4>Shop</h4>
                     <ul>
-                        <li><a href="#">Sheets</a></li>
-                        <li><a href="#">Pillowcases</a></li>
+                        <li><a href="#products">Bedsheets</a></li>
+                        <li><a href="#products">Pillowcases</a></li>
+                        <li><a href="#products">Comforters</a></li>
                     </ul>
                 </div>
 
@@ -1131,7 +1081,7 @@
                     <h4>Help</h4>
                     <ul>
                         <li><a href="#">Size Guide</a></li>
-                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Care Instructions</a></li>
                         <li><a href="#">Returns</a></li>
                         <li><a href="#">FAQs</a></li>
                     </ul>
@@ -1142,15 +1092,15 @@
                     <ul>
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Sustainability</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="tel:+15551234567"><i class="fas fa-phone-alt" style="margin-right: 6px;"></i> (234) 817 060 7461 (973) 405 7681</a></li>
-						<li><a href="mailto:ememoguejiofor@yahoo.com">ememoguejiofor@yahoo.com</a>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="tel:+2348170607461"><i class="fas fa-phone-alt" style="margin-right: 6px;"></i> +234 (817) 060-7461</a></li>
+                        <li><a href="mailto:ememoguejiofor@yahoo.com"><i class="fas fa-envelope" style="margin-right: 6px;"></i> ememoguejiofor@yahoo.com</a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <span>&copy; 2026 LuxeRest. All rights reserved.</span>
+                <span>&copy; 2026 Emy & Edy Beddings. All rights reserved.</span>
                 <span>
                     <a href="#" style="margin-right: 16px;">Privacy Policy</a>
                     <a href="#">Terms of Service</a>
@@ -1181,7 +1131,7 @@
             e.preventDefault();
             const input = form.querySelector('input[type="email"]');
             if (input.value.trim()) {
-                alert('🎉 Thank you! Your 15% off code is on its way.');
+                alert('🎉 Thank you for subscribing! Your 15% off code is on its way.');
                 input.value = '';
             } else {
                 alert('Please enter a valid email address.');
